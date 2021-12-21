@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>historyServiceMom</name>
+	<displayName><![CDATA[Historial Servicios Madres]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Modulo del historial de servicios recibidos para el usuario madre]]></description>
+	<author><![CDATA[Daniel Gonzalez]]></author>
+	<tab><![CDATA[others]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>

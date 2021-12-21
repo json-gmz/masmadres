@@ -1,0 +1,25 @@
+<?php return array (
+  'parameters' => 
+  array (
+    'database_host' => 'localhost',
+    'database_port' => '3306',
+    'database_name' => 'masmadres',
+    'database_user' => 'root',
+    'database_password' => '',
+    'database_prefix' => 'mm_',
+    'database_engine' => 'InnoDB',
+    'mailer_transport' => 'smtp',
+    'mailer_host' => '127.0.0.1',
+    'mailer_user' => NULL,
+    'mailer_password' => NULL,
+    'secret' => 'GNiMKXRGhwJ47H2f0Z9HId9aLGvwWfksUkm8m4krtV77oVihww8h4BH3',
+    'ps_caching' => 'CacheMemcache',
+    'ps_cache_enable' => false,
+    'ps_creation_date' => '2020-05-27',
+    'locale' => 'es-ES',
+    'use_debug_toolbar' => true,
+    'cookie_key' => 'XO3g8fkYMzQHSntMJSEyTAKrdb00BbahUDrnFZVu5LMfbJOVHFMNwnCM',
+    'cookie_iv' => 'jEMSYNop',
+    'new_cookie_key' => 'def00000bc6cd828736e8feedf96e59b05d8baa3b52d1c737d5c4c495bbbc2806f0b968f5fe2991fc0da041ca65a10c99e57a448155b489ca0cd8c499baa0c193aecdb81',
+  ),
+);

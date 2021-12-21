@@ -1,0 +1,58 @@
+<div class="card">
+  <h3 class="card-header">
+    <i class="material-icons">collections_bookmark</i>
+    {{ 'Files'|trans({}, 'Admin.Global') }}
+    </a>
+  </h3>
+  <div class="card-body">
+    {% if filesCustomer is not empty %}
+      <table class="table">
+        <thead>
+          <tr>
+            <th>{{ 'Name'|trans({}, 'Admin.Global') }}</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for file in filesCustomer %}
+          <tr>
+            <td>{{ file.filetype|trans({}, 'Admin.Global') }}</td>
+            <td>
+              <a href="/momfiles/{{ file.basename }}" target="_blank">
+                <i class="material-icons">pageview</i>
+              </a>
+            </td>
+            <td>
+              <span class="delete_file" file="/momfiles/{{ file.basename }}" style="cursor: pointer;">
+                <i class="material-icons">delete_forever</i>
+              </span>
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p class="text-muted text-center mb-0">
+        {{ 'No files is available'|trans({}, 'Admin.Global') }}
+      </p>
+    {% endif %}
+  </div>
+</div>
+{% verbatim %}
+  <script type="text/javascript">
+    $(function() {
+      $(".delete_file").on("click", function() {
+        $.ajax({
+          method: "POST",
+          url: "/ajax/ApiDeleteFileMom.php",
+          data : {
+            'file' : $(this).attr("file")
+          },
+        }).done(function(response) {
+          location.reload();
+        });
+      });
+    });
+  </script>
+{% endverbatim %}

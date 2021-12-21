@@ -1,0 +1,84 @@
+{% set showBalance = false %}
+{% for group in customerInformation.groupsInformation %}
+	{% if group.groupId == 10 %}
+		{% set showBalance = true %}
+	{% endif %}
+{% endfor %}
+
+{% if showBalance %}
+	<div class="card">
+		<h3 class="card-header">
+			<i class="material-icons">iso</i>
+			{{ 'Balance'|trans({}, 'Admin.Global') }}
+		</h3>
+		<div class="card-body">
+			<center>
+				<input type="hidden" id="id_customer" value="{{ customerInformation.customerId.value }}" />
+				<strong>Actual:</strong>
+				<br>
+				<span>{{ customerInformation.personalInformation.balance }}</span>
+				<br><br>
+				<input type="number" id="balance" value="0" />
+				<br>
+				<input type="radio" id="up" name="type_move" value="up">
+				<label for="up">Aumentar</label>
+				<strong> | </strong>
+				<input type="radio" id="down" name="type_move" value="down">
+				<label for="down">Disminuir</label>
+				<br><br>
+				<strong>Comentario:</strong>
+				<br>
+				<textarea id="comment" name="comment" rows="4" cols="50" style="resize: none;"></textarea>
+				<br><br>
+				<button class="btn btn-primary" id="btn-update-balance">{{ 'Aplicar'|trans({}, 'Admin.Global') }}</button>
+			</center>
+		</div>
+	</div>
+	{% verbatim %}
+		<script type="text/javascript">
+			$(function() {
+				$('input:radio[name=type_move]').on("change", function() {
+					var comment = "";
+					var type_move = $('input:radio[name=type_move]:checked').val();
+
+					if ( type_move == "up" ) {
+						comment = "Se recibe dinero por parte de la Madre.";
+					}
+					if ( type_move == "down" ) {
+						comment = "Se transfiere dinero a la Madre.";
+					}
+
+					$("#comment").val(comment);
+				});
+
+				$("#btn-update-balance").on("click", function() {
+					if (
+						$("#id_customer").val() != "" &&
+						$("#balance").val() != "" &&
+						$("#comment").val() != "" &&
+						( $('input:radio[name=type_move]:checked').val() == "up" || $('input:radio[name=type_move]:checked').val() == "down" )
+					) {
+						if ( confirm("Deseas aplicar el movimiento de balance?") ) {
+							$("#btn-update-balance").attr("disabled",true);
+							$.ajax({
+								method: "POST",
+								url: "/ajax/ApiSetMomBalance.php",
+								data : {
+									'customer' : $("#id_customer").val(),
+									'balance' : $("#balance").val(),
+									'comment' : $("#comment").val(),
+									'type' : $('input:radio[name=type_move]:checked').val(),
+								},
+							}).done(function(response) {
+								alert("Actualización de balance exitoso.");
+								location.reload();
+							});
+						}
+					} else {
+						alert("Por favor diligenciar todos los datos.");
+					}
+				});
+			});
+		</script>
+	{% endverbatim %}
+{% endif %}

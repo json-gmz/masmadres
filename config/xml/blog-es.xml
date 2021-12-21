@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://www.prestashop.com/es/blog/feed.xml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>Blog Feed</title>
+    <link>https://www.prestashop.com/es/blog/feed.xml</link>
+    <description></description>
+    <language>es</language>
+     <atom:link href="https://www.prestashop.com/es/blog/feed.xml" rel="self" type="application/rss+xml" />
+      <item>
+    <title>Ibericomio ¡El éxito de un eCommerce loco por lo ibérico!</title>
+    <link>https://www.prestashop.com/es/blog/ibericomio</link>
+    <description>Hoy te traemos un caso de éxito “pata negra”: Ibericomio, un eCommerce de productos ibéricos que está triunfando en el mercado español y con un ambicioso proyecto de internacionali</description>
+     <pubDate>Fri, 02 Oct 2020 10:00:00 +0200</pubDate>
+ <dc:creator>Jorge González Marcos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/ibericomio</guid>
+  </item>
+  <item>
+    <title>¿Qué es el Marketing Sensorial y cómo te ayuda en la estrategia de tu eCommerce?</title>
+    <link>https://www.prestashop.com/es/blog/marketing-sensorial</link>
+    <description>¿Sabes qué es el Marketing Sensorial y cómo puede ayudarte en el aumento de tus ventas online?</description>
+     <pubDate>Wed, 30 Sep 2020 06:06:06 +0200</pubDate>
+ <dc:creator>Jorge González Marcos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/marketing-sensorial</guid>
+  </item>
+  <item>
+    <title>¿Cuáles son los factores a tener en cuenta antes de abrir un eCommerce?</title>
+    <link>https://www.prestashop.com/es/blog/factores-para-abrir-ecommerce</link>
+    <description>Si estás pensando en abrir un eCommerce, hay una serie de factores, aparentemente secundarios, en los que definitivamente debes centrarte.</description>
+     <pubDate>Tue, 29 Sep 2020 05:54:52 +0200</pubDate>
+ <dc:creator>Jorge González Marcos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/factores-para-abrir-ecommerce</guid>
+  </item>
+  <item>
+    <title>Directiva DSP2: ¿En qué consiste esta normativa para servicios de pagos digitales?</title>
+    <link>https://www.prestashop.com/es/blog/directiva-psd2</link>
+    <description>
+Inicialmente programada para el 14 de septiembre de 2019, y luego pospuesta para marzo de 2020, la PSD2 vuelve con fuerza a principios del nuevo año escolar.</description>
+     <pubDate>Mon, 28 Sep 2020 09:00:11 +0200</pubDate>
+ <dc:creator>Jorge González Marcos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/directiva-psd2</guid>
+  </item>
+  <item>
+    <title>¿Cómo puede ayudarte el Email Marketing a conseguir clientes?</title>
+    <link>https://www.prestashop.com/es/blog/como-crear-emails-marketing-que-te-consigan-clientes</link>
+    <description>¿Sientes que puedes conseguir clientes gracias a tus envíos de emails, pero no sabes cómo?</description>
+     <pubDate>Fri, 25 Sep 2020 06:58:03 +0200</pubDate>
+ <dc:creator>Jorge González Marcos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/como-crear-emails-marketing-que-te-consigan-clientes</guid>
+  </item>
+  <item>
+    <title>Guía de &amp;quot;Marketfire&amp;quot;: la solución perfecta para la gestión de tu marketplace en PrestaShop</title>
+    <link>https://www.prestashop.com/es/blog/marketfire</link>
+    <description>¿Conoces &quot;Marketfire&quot; y sus enormes ventajas para tu eCommerce?</description>
+     <pubDate>Wed, 23 Sep 2020 08:38:19 +0200</pubDate>
+ <dc:creator>Jorge González Marcos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/marketfire</guid>
+  </item>
+  <item>
+    <title>Automatizar tus redes sociales ¿cómo y por qué benefician a tu estrategia Social Media?</title>
+    <link>https://www.prestashop.com/es/blog/automatizar-redes-sociales</link>
+    <description>¿Cómo automatizas las redes sociales de tu eCommerce? ¿...aún no lo haces? ¡Hoy conocerás cómo hacerlo!</description>
+     <pubDate>Mon, 21 Sep 2020 06:06:00 +0200</pubDate>
+ <dc:creator>Jorge González Marcos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/automatizar-redes-sociales</guid>
+  </item>
+  <item>
+    <title>¿Cómo optimizar la Base de Datos de PrestaShop 1.7 para mejorar el rendimiento?</title>
+    <link>https://www.prestashop.com/es/blog/optimizar-base-datos-prestashop</link>
+    <description>¿Necesitas optimizar la Base de Datos de tu tienda PrestaShop 1.7 y no sabes cómo?</description>
+     <pubDate>Fri, 18 Sep 2020 06:06:00 +0200</pubDate>
+ <dc:creator>Alejandro Ramos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/optimizar-base-datos-prestashop</guid>
+  </item>
+  <item>
+    <title>¿Cómo hacer un análisis de datos que te permita aumentar tus ventas?</title>
+    <link>https://www.prestashop.com/es/blog/analisis-de-datos</link>
+    <description>Saber analizar datos es la primera habilidad que se debe adquirir para llevar un comercio electrónico al éxito.</description>
+     <pubDate>Wed, 16 Sep 2020 06:06:00 +0200</pubDate>
+ <dc:creator>Jorge González Marcos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/analisis-de-datos</guid>
+  </item>
+  <item>
+    <title>Estrategias de crecimiento empresarial: todo lo que necesitas saber para comenzar con tu eCommerce</title>
+    <link>https://www.prestashop.com/es/blog/estrategias-crecimiento-empresarial</link>
+    <description>¿Conoces las mejores estrategias de crecimiento empresarial aplicables a tiendas online?</description>
+     <pubDate>Mon, 14 Sep 2020 17:06:00 +0200</pubDate>
+ <dc:creator>Jorge González Marcos</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/estrategias-crecimiento-empresarial</guid>
+  </item>
+  </channel>
+</rss>

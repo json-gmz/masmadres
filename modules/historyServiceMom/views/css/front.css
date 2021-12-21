@@ -1,0 +1,111 @@
+/**
+* 2007-2020 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2020 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+.title-text{
+    text-align: center; font-weight:bold;
+}
+
+.header-table{
+    background: #42F5BC;
+    border: #42F5BC solid 1px;
+    color: #fff;
+}
+
+.history{
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+.page-header{
+    margin-top: 50px;
+}
+
+.text-left{
+    text-align:left;
+}
+
+.text-right{
+    text-align:right;
+    font-weight:bold;
+    color:#000;
+}
+
+.button_modal{
+    padding: 9px 30px 10px;
+    background-color: #42F5BC;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+    .deleteadd{
+        display:none;
+    }
+
+    .history{
+        font-size:10px;
+    }
+
+    .title-text{
+        font-size:10px;
+    }
+
+    #button_info{
+        font-size:10px;
+    }
+
+    .text-left{
+        font-size:10px;
+        word-wrap: break-word;
+    }
+
+    .text-right{
+        font-size:10px;
+    }
+
+    .text-table{
+        font-size:10px;
+    }
+}
+
+.title-accept{
+    padding: 10px;
+}
+
+.title-service{
+    padding: 10px 0px 30px 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.button-ok{
+    padding: 15px 0px 3px;
+}
+

@@ -1,0 +1,32 @@
+{% if filesCustomer is not empty and customerInformation.personalInformation.active == 0 %}
+  <div class="card">
+    <h3 class="card-header">
+      <i class="material-icons">check_circle</i>
+      {{ 'Active'|trans({}, 'Admin.Global') }} {{ 'Services'|trans({}, 'Admin.Global') }}
+      </a>
+    </h3>
+    <div class="card-body">
+      <input type="hidden" id="id_customer" value="{{ customerInformation.customerId.value }}" />
+      <button class="btn btn-primary" id="btn-active-services">
+        {{ 'Active'|trans({}, 'Admin.Actions') }}
+      </button>
+    </div>
+  </div>
+  {% verbatim %}
+    <script type="text/javascript">
+      $(function() {
+        $("#btn-active-services").on("click", function() {
+          $.ajax({
+            method: "POST",
+            url: "/ajax/ApiSetMomActiveServices.php",
+            data : {
+              'customer' : $("#id_customer").val()
+            },
+          }).done(function(response) {
+            location.reload();
+          });
+        });
+      });
+    </script>
+  {% endverbatim %}
+{% endif %}

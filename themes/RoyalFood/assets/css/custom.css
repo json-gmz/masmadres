@@ -1,0 +1,211 @@
+
+
+/********************************************************
+			Codezeel Custom Styles
+********************************************************/
+.cz-carousel {
+  display: none;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 0;
+  -ms-touch-action: pan-y;
+}
+
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item {
+  float: left;
+}
+.owl-carousel .owl-item .manu_image a {
+  display: inline-block;
+}
+.owl-carousel .owl-item .manu_image a img {
+  max-width: 100%;
+}
+.owl-carousel .owl-item:hover a img {
+  border-color: blue;
+}
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  /* fix */
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  text-align: center;
+}
+
+/* mouse grab icon */
+.grabbing {
+  cursor: url("../img/codezeel/grabbing.png") 8 8, move;
+}
+ 
+.customNavigation {
+  position: absolute;
+  z-index: 959;
+  width: 100%;
+  top: 40%;
+  direction: ltr !important;
+}
+.customNavigation a {
+  font-size: 0;
+  position: absolute;
+  font-weight: 300;
+  height: 20px;
+  padding: 0;
+  color: #262626;
+  background: none;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.customNavigation a:hover{
+	border-color: #5bb000;
+}
+.customNavigation a:hover:before{ color: #5bb000; }
+
+.customNavigation a.prev {
+  left: -40px;
+}
+.customNavigation a.next {
+  right: -40px;
+}
+@media (max-width: 1300px) {
+	.customNavigation a.prev {
+		left: 0px;
+	}
+	.customNavigation a.next {
+		right: 0px;
+	}
+}
+@media (max-width: 1199px) and (min-width: 768px){
+	.customNavigation a.prev {
+		left: -20px;
+	}
+	.customNavigation a.next {
+		right: -20px;
+	}
+}
+@media (max-width: 767px) {
+	.customNavigation a.prev {
+		left: 0px;
+	}
+	.customNavigation a.next {
+		right: 0px;
+	}
+	#main .images-container .js-qv-mask {}
+}
+
+.customNavigation a:before{
+    font-size: 25px;
+    font-family: "FontAwesome";
+    color: #262626;
+}
+.customNavigation a.prev:before {
+  content: "\f177";
+}
+.customNavigation a.next:before {
+  content: "\f178";
+}
+
+#czleftbanner img,
+#czrightbanner img{
+	max-width: 100%;
+	margin-bottom: 10px;
+}	
+
+
+.top_button {
+	background: #143848;
+    border: 1px solid #fff;
+    bottom: 20px;
+    cursor: pointer;
+    height: 38px;
+    padding: 6px 12px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 38px;
+    z-index: 99;
+}
+.top_button:hover{
+  background: var(--mm-color-secundary);
+  border: 1px solid #000;
+}
+.top_button:hover:before{
+  color: #000;
+}
+.top_button:before{
+	color: #fff;
+    content: "\f106";
+    font-family: "FontAwesome";
+    font-size: 18px;
+    font-weight: 700;
+}
+/* Flexslider */
+
+#index .spinner {
+    min-height: 520px;
+    background: url(../img/codezeel/loading.gif) no-repeat center center #16435d;
+    width: 100%;
+}
+@media (max-width: 1399px) {
+	#index .spinner {min-height: 480px;}
+}
+@media (max-width: 1199px) {
+	#index .spinner {min-height: 380px;}
+}
+@media (max-width: 991px) {
+	#index .spinner {min-height: 320px;}
+}
+@media (max-width: 767px) {
+	#index .spinner {min-height: 250px;}
+}
+@media (max-width: 479x) {
+	#index .spinner {min-height: 180px;}
+}
+.flexslider .flex-direction-nav .flex-prev {
+    cursor: url(../img/codezeel/slide-prev.png),pointer;
+    left: 5px;
+    font-size: 0;
+}
+.flexslider .flex-direction-nav .flex-next {
+    cursor: url(../img/codezeel/slide-next.png),pointer;
+    right: 5px;
+    font-size: 0;
+}
+
+

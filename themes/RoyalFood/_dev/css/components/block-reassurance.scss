@@ -1,0 +1,24 @@
+#block-reassurance{
+  margin-top: 20px;
+  img{
+    @include opacity(0.7);
+    width: rem(25px);
+    margin-right: 10px;
+  }
+  ul{
+  	margin-bottom:0px; 
+    li{
+		margin-bottom: 5px;
+		color: #000;
+	   .block-reassurance-item{
+			padding: 12px 15px;
+			margin-bottom: 0;
+			border-left: 3px solid rgb(115, 155, 160);
+			background: rgba(121, 164, 171, 0.46);
+		}
+	}
+  }	  
+  span{
+      font-weight: 400;
+  }
+}
